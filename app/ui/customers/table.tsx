@@ -1,10 +1,10 @@
-import Image from 'next/image';
-import { lusitana } from '@/app/ui/fonts';
-import Search from '@/app/ui/search';
+import Image from "next/image";
+import { lusitana } from "@/app/ui/fonts";
+import Search from "@/app/ui/search";
 import {
   CustomersTableType,
   FormattedCustomersTable,
-} from '@/app/lib/definitions';
+} from "@/app/lib/definitions";
 
 export default async function CustomersTable({
   customers,
@@ -12,7 +12,7 @@ export default async function CustomersTable({
   customers: FormattedCustomersTable[];
 }) {
   return (
-    <div className="w-full">
+    <section className="w-full">
       <h1 className={`${lusitana.className} mb-8 text-xl md:text-2xl`}>
         Customers
       </h1>
@@ -118,6 +118,6 @@ export default async function CustomersTable({
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
